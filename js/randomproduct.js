@@ -31,7 +31,7 @@ function loadProducts(numProducts) {
                         </div>
                         <div class="content">
                             <h3>${name}</h3>
-                            <div class="price">${price.toLocaleString()}đ <span>${discountedPrice.toLocaleString()}đ</span></div>
+                            <div class="price">${discountedPrice.toLocaleString()}đ <span>${price.toLocaleString()}đ</span></div>
                         </div>
                     </div>
                 `;
