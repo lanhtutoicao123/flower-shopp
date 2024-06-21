@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flower - Đặt Hoa online - Giao miễn phí tận nơi</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">THE FLOWER<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="#review">review</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="shoppingcart.html" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Hoa Tươi</h3>
+        <span> Hoa Tự Nhiên & Đẹp </span>
+        <p>Khám phá vẻ đẹp tinh tế của những bông hoa tươi mới! Từ sắc hồng dịu dàng đến hương thơm quyến rũ, mỗi bó hoa của chúng tôi là một tác phẩm nghệ thuật độc đáo. Hãy để hoa tươi thắp sáng ngày của bạn và truyền tải thông điệp yêu thương.</p>
+        <a href="#" class="btn">Mua ngay</a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> Về </span> chúng tôi </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="images/about-vid.mp4" loop autoplay muted></video>
+            <h3>Cửa hàng bán hoa uy tín nhất</h3>
+        </div>
+
+        <div class="content">
+            <h3>Tại sao nên mua hoa của chúng tôi</h3>
+            <p>Chúng tôi cam kết về chất lượng với mỗi bông hoa được lựa chọn và sắp xếp tỉ mỉ để đảm bảo sự tươi mới và lâu bền. Từ những bông hoa hồng truyền thống đến những loài lan hiếm, chúng tôi mang đến cho bạn một sự đa dạng phong phú, phù hợp với mọi sở thích và dịp đặc biệt.</p>
+            <p>Dịch vụ cá nhân hóa là trọng tâm của chúng tôi. Đội ngũ nhân viên thân thiện và nhiệt tình của chúng tôi luôn sẵn sàng lắng nghe và đáp ứng những mong đợi của bạn. Chúng tôi cam kết mang đến cho bạn một trải nghiệm mua sắm hoa đáng nhớ và đáp ứng những yêu cầu đặc biệt của bạn một cách tận tâm và chuyên nghiệp.</p>
+            <a href="#" class="btn">Xem thêm</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="images/icon-1.png" alt="">
+        <div class="info">
+            <h3>Miễn phí vận chuyển</h3>
+            <span>cho tất cả đơn hàng</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-2.png" alt="">
+        <div class="info">
+            <h3>Hoàn trả trong 10 ngày</h3>
+            <span>nếu không ưng ý</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-3.png" alt="">
+        <div class="info">
+            <h3>Nhận Đặt và gói quà</h3>
+            <span>nếu khách hàng yêu cầu</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-4.png" alt="">
+        <div class="info">
+            <h3>Thanh toán online</h3>
+            <span>chấp nhận thanh toán nhiều hình thức</span>
+        </div>
+    </div>
+   
+</section>  
+
+<!-- icons section ends -->
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> <span>Sản phẩm</span> Được yêu thích </h1>
+    <div class="box-container" id="product-container">
+        <!-- Sản phẩm sẽ được thêm vào đây bởi JavaScript -->
+    </div>
+</section>
+
+<!-- prodcuts section ends -->
+
+ <!-- Notification box -->
+ <div class="notification" id="notification">
+    <span class="message" id="notificationMessage"></span>
+    <span class="close-btn" onclick="closeNotification()">×</span>
+</div>
+<!-- Notification box end-->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<h1 class="heading"> <span>review</span> khách hàng </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+        <div class="user">
+            <img src="images/pic-1.png" alt="">
+            <div class="user-info">
+                <h3>john deo</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+        <div class="user">
+            <img src="images/pic-2.png" alt="">
+            <div class="user-info">
+                <h3>john deo</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+        <div class="user">
+            <img src="images/pic-3.png" alt="">
+            <div class="user-info">
+                <h3>john deo</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+</div>
+    
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Liên hệ </span> chúng tôi </h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Liên kết nhanh</h3>
+            <a href="#">Trang chủ</a>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Review</a>
+            <a href="#">Liện hệ</a>
+        </div>
+
+        <div class="box">
+            <h3>Link mở rộng</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>Trụ sở</h3>
+            <a href="#">HCM</a>
+            <a href="#">Đà Lạt</a>
+            <a href="#">Japan</a>
+            <a href="#">Hà Nội</a>
+        </div>
+
+        <div class="box">
+            <h3> Social links</h3>
+            <a href="https://www.facebook.com/profile.php?id=100020104785352"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href=""> <i class="fab fa-twitter"></i> twitter</a>
+            <a href=""> <i class="fab fa-instagram"></i> instagram</a>
+            <a href=""> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href=""> <i class="fab fa-pinterest"></i> pinterest</a>
+            <a href=""> <i class="fab fa-youtube"></i> youtube</a>
+        </div>
+
+        <div class="box">
+            <h3>Thông tin liên hệ</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">tiemhoa.theflower@gmail.com</a>
+            <a href="#">15b Nguyễn Sỹ Sách, Phường 15, Tân Bình, TP. HCM </a>
+            <h3>Chấp nhận thanh toán qua</h3>
+            <img src="images/payment.png" alt="payment image">
+        </div>
+
+    </div>
+
+    <div class="credit"> Được tạo bởi<span> <a href=""> Nguyễn Nữ Lệ Trâm </a> </span> | Được cấp phép bản quyền theo bộ công thương </div>
+
+</section>
+
+<!-- footer section ends -->
+<script src="js/randomproduct.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        loadProducts(9); // Load 9 sản phẩm
+    });
+</script>
+<script src="js/shoppingcart.js"></script>
+</body>
+</html>

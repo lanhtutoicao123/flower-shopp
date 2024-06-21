@@ -1,0 +1,232 @@
+/*header*/
+#header{
+    z-index: 1;
+    height: 72px;
+    background: #47a6ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+     display: inline-block;
+}
+
+#nav li{  
+    position: relative;
+}
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #47a6ee;
+    background-color: rgb(169, 200, 239);
+}
+
+#nav .subnav{
+    display: none;
+    padding: 3px;
+    top:56px;
+    min-width: 160px;
+    position: absolute;
+    background-color: #f8fbff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+    color: #231f1f;
+    padding:0 12px;
+    line-height: 38px;
+}
+
+.colum a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*Content*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #47a6ee;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #016da3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-column h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+}
+
+.footer-column p, .footer-column form {
+    margin: 10px 0;
+}
+
+.footer-column form input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.footer-column form button {
+    padding: 5px 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/*Model*/
+/* CSS nền hiển thị Modal */
+.nenmodal .nenmodal2 {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+    }
+    /* CSS bảng nội dung Modal */
+    .nenmodal .ndmodal {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:600px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+    border-radius:20px;
+    display: block;
+    position: fixed;
+    box-shadow:0px 0px 10px #111;
+    }
+    @media (max-width: 700px) {
+    .nenmodal .ndmodal {width:90%;}
+    }
+    /*bao bọc của nút tắt*/
+    .nenmodal .closemodal {
+    text-align:center;
+    margin-top:-40px;
+    margin-bottom:10px;
+    }
+
+    /*tieu de*/
+    .titlemodal{
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:10px;
+    }
+
+    /*nút tắt*/
+    .closemodal button{
+    width:40px;
+    height:40px;
+    font-size:30px;
+    padding:0px;
+    border-radius:100%;
+    background:#333;
+    color:#fff;
+    border:none;
+    }
+    .nenmodal.active .nenmodal2 {
+    display:block;
+    }
+
+    /*hiệu ứng*/
+    .nenmodal.active .ndmodal {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+    }
